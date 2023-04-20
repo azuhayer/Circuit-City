@@ -54,3 +54,15 @@ header {
     font-weight: 400;
     transition: all .42 ease;
 }
+
+.nav-icon i:hover {
+    transform: scale(1.1);
+    color: turquoise;
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+}
