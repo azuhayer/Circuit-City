@@ -112,7 +112,7 @@ section {
     text-transform: capitalize;
     border: 2px solid #111;
     padding: 12px 25px;
-    transition: all .42 ease;
+    transition: all .42s ease;
 }
 
 .main-btn:hover {
@@ -140,11 +140,57 @@ section {
 .down i:hover {
     background-color: black;
     color: white;
-    transition: all .42 ease;
+    transition: all .42s ease;
 }
 
 header.sticky {
     background: white;
     padding: 20px 10%;
     box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+/* Trending Section CSS */
+.center-text h2 {
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.center-text span {
+    color: turquoise;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+}
+
+.row {
+    position: relative;
+    transition: all .40s;
+}
+
+.row img {
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+
+.row img:hover {
+    transform: scale(0.9);
+}
+
+.product-text h5 {
+    position: absolute;
+    top: 13px;
+    left: 13px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: turquoise;
+    padding: 3px 10px;
+    border-radius: 2px;
 }
