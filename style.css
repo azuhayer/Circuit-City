@@ -33,7 +33,7 @@ header {
     color: #2c2c2c;
     font-size: 20px;
     text-transform: capitalize;
-    padding: 10px 20px;
+    padding: 10px 30px;
     font-weight: 400;
     transition: all .42s ease;
 }
@@ -122,4 +122,23 @@ section {
 
 .main-btn i {
     vertical-align: middle;
+}
+
+.down-arrow {
+    position: absolute;
+    top: 85%;
+    right: 11%;
+}
+
+.down i {
+    font-size: 30px;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 12px 12px;
+}
+
+.down i:hover {
+    background-color: black;
+    color: white;
+    transition: all .42 ease;
 }
