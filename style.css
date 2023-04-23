@@ -31,7 +31,7 @@ header {
 
 .navmenu a {
     color: #2c2c2c;
-    font-size: 16px;
+    font-size: 20px;
     text-transform: capitalize;
     padding: 10px 20px;
     font-weight: 400;
@@ -72,13 +72,54 @@ section {
 }
 
 .main-home {
-    width: 100%;
+    width: 50%;
     height: 100vh;
-    background-image: url(images/rtx4070.jpeg);
+    background-image: url();
     background-position: center;
     background-size: cover;
     display: grid;
     grid-template-columns: (1, 1fr);
     align-items: center;
 
+}
+
+.main-text h5 {
+    color: turquoise;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.main-text h1 {
+    color: black;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0px 10px;
+}
+
+.main-text p {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.main-btn {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 2px solid #111;
+    padding: 12px 25px;
+    transition: all .42 ease;
+}
+
+.main-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.main-btn i {
+    vertical-align: middle;
 }
