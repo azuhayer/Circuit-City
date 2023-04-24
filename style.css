@@ -194,3 +194,9 @@ header.sticky {
     padding: 3px 10px;
     border-radius: 2px;
 }
+
+.heart-icon {
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
