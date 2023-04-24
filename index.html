@@ -31,10 +31,29 @@
 
         <div class="nav-icon">  <!-- Nav Bar Icons -->
             <a href="#"><i class='bx bx-search'></i></a>
-            <a href="#"><i class='bx bx-user' ></i></a>
+            <a href="#"><i class='bx bx-user' id="user-icon"></i></a>
             <a href="#"><i class='bx bx-cart' ></i></a>
 
             <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+
+        <!-- Signup Modal -->
+        <div id="signup-modal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <form>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="new-username">Username:</label>
+                <input type="text" id="new-username" name="new-username" required>
+                <label for="new-password">Password:</label>
+                <input type="password" id="new-password" name="new-password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            </div>
         </div>
     </header>
 
