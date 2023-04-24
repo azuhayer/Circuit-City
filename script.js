@@ -1,20 +1,19 @@
+/* STICKY NAV BAR JAVASCRIPT */
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", function(){
     header.classList.toggle("sticky", this.window.scrollY > 0);
 })
 
-// Get the modal element
-var modal = document.getElementById("signup-modal");
+/* SIGNUP MODAL JAVASCRIPT */
+var modal = document.getElementById("signup-modal");            // Get the modal element
 
-// Get the user icon element
-var userIcon = document.getElementById("user-icon");
+var userIcon = document.getElementById("user-icon");            // Get the user icon element
 
-// Get the close button element
-var closeButton = document.getElementsByClassName("close")[0];
+var closeButton = document.getElementsByClassName("close")[0];  // Get the close button element
 
 // When the user clicks on the user icon, show the modal
-userIcon.onclick = function() {
+userIcon.onclick = function() { 
   modal.style.display = "block";
 }
 
