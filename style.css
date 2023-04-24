@@ -200,3 +200,24 @@ header.sticky {
     right: 0;
     font-size: 20px;
 }
+
+.heart-icon:hover {
+    color: red;
+}
+
+.rating i {
+    color: turquoise;
+    font-size: 16px;
+}
+
+.price h4 {
+    color: #111;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.price p {
+    font-size: 14px;
+    font-weight: 600;
+}
