@@ -228,6 +228,27 @@ header.sticky {
     padding: 20px;
 }
 
+.header{
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+}
+
+html body {
+ padding-top: 65px;
+}
+
+#shopping-cart {
+    margin: 100px;
+    padding: 0px;
+}
+
+#cart-container {
+    margin: 100px;
+    padding: 0px;
+}
+
 #cart-container table{
     border-collapse: collapse;
     width: 100%;
