@@ -222,7 +222,11 @@ header.sticky {
     font-weight: 600;
 }
 
-
+.end-text {
+    background-color:#edfff1;
+    text-align: center;
+    padding: 20px;
+}
 
 
 
