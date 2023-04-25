@@ -298,3 +298,19 @@ header.sticky {
   button[type="submit"]:hover {
     background-color: #3e8e41;
   }
+
+  /* Responsive CSS */
+
+  @media(max-width:890px){
+    header{
+        padding: 20px 3%;
+        transition: .4s;
+    }
+  }
+  
+  @media(max-width:630px){
+    .main-text h1{
+        font-size: 50px;
+        transition: .4s;
+    }
+  }
