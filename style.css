@@ -252,13 +252,16 @@ html body {
  padding-top: 65px;
 }
 
+/* Shopping Cart CSS */
+
 #shopping-cart {
-    margin: 100px;
-    padding: 0px;
+    margin: 80px 100px 0 100px;
+    padding: 20px;
 }
 
 #cart-container {
-    margin: 100px;
+    overflow-x: auto;
+    margin: 0 100px 0 100px;
     padding: 0px;
 }
 
@@ -266,6 +269,7 @@ html body {
     border-collapse: collapse;
     width: 100%;
     table-layout: fixed;
+    white-space: nowrap;
 }
 
 #cart-container table thead{
@@ -299,14 +303,79 @@ html body {
     width: 170px;
 }
 
-#cart-container table tbody img{
+#cart-container table tbody img {
     width: 100px;
     height: 80px;
     object-fit: cover;
 }
 
-#cart-container table tbody i{
+#cart-container table tbody i {
     color: #8d8c89;
+}
+
+#cart-bottom{
+    overflow-x: auto;
+    margin: 0 200px 0 200px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+#cart-bottom .coupon{
+    padding: 20px;
+    float: left;
+}
+
+#cart-bottom .total{
+    padding: 20px;
+    overflow: hidden;
+}
+
+#cart-bottom .coupon>div,
+#cart-bottom .total>div {
+    border: 1px solid #b6b3b3;
+}
+
+#cart-bottom .coupon h5,
+#cart-bottom .total h5 {
+    background: turquoise;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    font-weight: 700;
+}
+
+#cart-bottom .coupon p,
+#cart-bottom .coupon input {
+    padding: 0 12px;
+}
+
+#cart-bottom .coupon input {
+    height: 44px;
+}
+
+#cart-bottom .coupon input,
+#cart-bottom .coupon button {
+    margin: 0 0 20px 12px;
+}
+
+#cart-bottom .total div>div{
+    padding: 0 12px;
+}
+
+#cart-bottom .total h6 {
+    color: #2a2a2a;
+}
+
+.second-hr{
+    background: #b8b7b3;
+    width: 100%;
+    height: 1px;
+}
+
+#cart-bottom .total div>button{
+    margin: 0 0 20px 12px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 /* Signup Modal CSS */ 
