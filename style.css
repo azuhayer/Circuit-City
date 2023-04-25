@@ -228,8 +228,22 @@ header.sticky {
     padding: 20px;
 }
 
+#cart-container table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
 
+#cart-container table thead{
+    font-weight: 700;
+}
 
+#cart-container table thead td{
+    background: turquoise;
+    color: #fff;
+    border: none;
+    padding: 6px 0;
+}
 
 /* Signup Modal CSS */ 
 .modal {
