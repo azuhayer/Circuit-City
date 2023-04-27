@@ -247,6 +247,18 @@ html body {
  padding-top: 65px;
 }
 
+/* Products CSS */
+
+.section-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.shop{
+    margin-top: 2rem;
+}
+
 /* Shopping Cart CSS */
 
 #shopping-cart {
