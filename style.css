@@ -74,7 +74,8 @@ section {
 .main-home {
     width: 100%;
     height: 80vh;
-    background-image: url(images/rtx4070.png);
+    margin: 60px 0 0 0;
+    background-image: url(images/rtx40701.png);
     background-position: center;
     background-size: cover;
     display: grid;
@@ -126,7 +127,7 @@ section {
 
 .down-arrow {
     position: absolute;
-    top: 85%;
+    top: 95%;
     right: 11%;
 }
 
