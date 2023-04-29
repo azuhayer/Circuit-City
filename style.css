@@ -63,8 +63,8 @@ header {
 #menu-icon {
     font-size: 35px;
     color: #2c2c2c;
-    z-index: 10001;
     cursor: pointer;
+    z-index: 10000;
 }
 
 section {
@@ -276,9 +276,10 @@ html body {
     position: fixed;
     top: 0;
     right: -100%;
-    margin-top: 8rem;
+    z-index: 10001;
+    margin-top: 0rem;
     width: 360px;
-    min-height: 60vh;
+    min-height: 100vh;
     padding: 20px;
     background: #fff;
     box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
@@ -533,18 +534,18 @@ html body {
     float: left;
 }
 
-#cart-bottom .total{
+#cart-bottom .total-box{
     padding: 20px;
     overflow: hidden;
 }
 
 #cart-bottom .coupon>div,
-#cart-bottom .total>div {
+#cart-bottom .total-box>div {
     border: 1px solid #b6b3b3;
 }
 
 #cart-bottom .coupon h5,
-#cart-bottom .total h5 {
+#cart-bottom .total-box h5 {
     background: turquoise;
     color: #fff;
     border: none;
@@ -566,11 +567,11 @@ html body {
     margin: 0 0 20px 12px;
 }
 
-#cart-bottom .total div>div{
+#cart-bottom .total-box div>div{
     padding: 0 12px;
 }
 
-#cart-bottom .total h6 {
+#cart-bottom .total-box h6 {
     color: #2a2a2a;
 }
 
@@ -580,7 +581,7 @@ html body {
     height: 1px;
 }
 
-#cart-bottom .total div>button{
+#cart-bottom .total-box div>button{
     margin: 0 0 20px 12px;
     display: flex;
     justify-content: flex-end;
