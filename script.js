@@ -39,7 +39,7 @@ menu.onclick = () => {
   navmenu.classList.toggle('open');
 }
 
-// Cart
+// Cart JavaScript
 
 let cartIcon = document.querySelector('#cart-icon');
 let cart = document.querySelector('.cart');
