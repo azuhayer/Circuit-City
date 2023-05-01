@@ -248,6 +248,12 @@ html body {
  padding-top: 65px;
 }
 
+/* Search Bar CSS */
+
+.search{
+    position: fixed;
+}
+
 /* Products CSS */
 
 .section-title{
@@ -259,6 +265,9 @@ html body {
 
 .shop{
     margin-top: 2rem;
+    padding: 20px;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
 
 .shop-content{
