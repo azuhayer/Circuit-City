@@ -25,4 +25,9 @@ if(! preg_match("/[0-9]/i", $_POST["password"]))
     die("Password must contain at least one number");
 }
 
+if ($_POST["password"] !== $_POST["password_confirmation"])
+{
+    die("Passwords must match");
+}
+
 print_r($_POST);
