@@ -41,11 +41,11 @@ menu.onclick = () => {
 
 // Search Bar Javascript
 
-let searchIcon = document.querySelector('#search-icon');
-let search = document.querySelector('.search');
+ let searchIcon = document.querySelector('#search-icon');
+ let search = document.querySelector('.search');
 
-searchIcon.onclick = () => {
-  search.classList.add("active");
+ searchIcon.onclick = () => {
+   search.classList.add("active");
 }
 
 // Cart JavaScript
