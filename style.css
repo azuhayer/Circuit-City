@@ -753,3 +753,78 @@ html body {
         right: 0;
     }
   }
+
+/* Individual Product Pages CSS */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 90px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 0;
+}
+
+.product-image {
+    float: left;
+    margin-right: 20px;
+}
+
+.product-image img {
+    max-width: 100%;
+}
+
+.product-description {
+    overflow: hidden;
+}
+
+.product-description p {
+    margin: 0;
+}
+
+.product-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #c0392b;
+    margin-top: 20px;
+}
+
+.product-details {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.product-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-details li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 14px;
+    color: #444;
+}
+
+.product-details li:last-child {
+    margin-right: 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: turquoise;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #1a5276;
+}
