@@ -415,8 +415,6 @@ html body {
 
 .add-cart{
     position: absolute;
-    bottom: 0;
-    right: 0;
     background: turquoise;
     color:#000;
     padding: 10px;
