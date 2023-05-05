@@ -778,3 +778,48 @@ h1 {
 .button:hover {
     background-color: #1a5276;
 }
+
+/* Comments Section CSS */
+.comment-box {
+    width: 50%;
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 25%;
+    margin-top: 80px;
+    box-shadow: 0px 0px 10px 1px rgb(165, 165, 165);
+}
+
+.comment-box p {
+    text-align: left;
+    font-size: 28px;
+    color: #777;
+}
+
+.comment-form input, .comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    color: #777;
+}
+
+.comment-form button {
+    margin: 10px 0;
+    border: none;
+    background-color: turquoise;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 3px;
+    color: #444;
+}
+
+.comment-form button:hover {
+    color: white;
+    background-color: #1a5276;
+    transition: background-color 0.3s ease;
+}
