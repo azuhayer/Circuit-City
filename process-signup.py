@@ -1,16 +1,17 @@
+from flask import Flask, request
 import pandas as pd
 
-# Get sign-up information from HTML form
-name = "John Doe"
-email = "john.doe@example.com"
-password = "mypassword123"
+app = Flask(__name__)
 
-# Create a new data frame with sign-up information
-signup_df = pd.DataFrame({
-    "Name": [name],
-    "Email": [email],
-    "Password": [password]
-})
+@app.route("/path/to/python/script.py", methods=["POST"])
+def save_signup_data():
+    data = request.json  # Get the data from the request body
+    df = pd.DataFrame(data)  # Create a pandas DataFrame
+    
+    # Save the data to a CSV file
+    df.to_csv("signup_data.csv", mode="a", header=False, index=False)
+    
+    return "Data saved successfully!"
 
-# Save data frame to CSV file
-signup_df.to_csv("signup_data.csv", index=False)
+if __name__ == "__main__":
+    app.run()

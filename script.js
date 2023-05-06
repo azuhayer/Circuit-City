@@ -6,11 +6,12 @@ window.addEventListener("scroll", function(){
 })
 
 /* SIGNUP MODAL JAVASCRIPT */
-var modal = document.getElementById("signup-modal");            
-var userIcon = document.getElementById("user-icon");            
-var closeButton = document.getElementsByClassName("close")[0];  
 
-userIcon.onclick = function() { 
+var modal = document.getElementById("signup-modal");
+var userIcon = document.getElementById("user-icon");
+var closeButton = document.getElementsByClassName("close")[0];
+
+userIcon.onclick = function() {
   modal.style.display = "block";
 }
 
@@ -23,6 +24,44 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+var signupForm = document.getElementById("signup-form");
+
+signupForm.addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevent the default form submission
+  
+  // Get the form data
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var username = document.getElementById("username").value;
+  var password = document.getElementById("password").value;
+  
+  // Create a data object to send in the request
+  var data = {
+    name: name,
+    email: email,
+    username: username,
+    password: password
+  };
+  
+  // Send the data to the Python script
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "path/to/python/script.py", true);
+  xhr.setRequestHeader("Content-Type", "application/json");
+  xhr.send(JSON.stringify(data));
+  
+  // Handle the response from the Python script
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === XMLHttpRequest.DONE) {
+      if (xhr.status === 200) {
+        console.log("Data saved successfully!");
+      } else {
+        console.log("Error saving data");
+      }
+    }
+  };
+});
+
 
 // Minimized window menu tab interaction
 
