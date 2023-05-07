@@ -25,7 +25,7 @@ window.onclick = function(event) {
   }
 }
 
-var signupForm = document.getElementById("signup-form");
+/* var signupForm = document.getElementById("signup-form");
 
 signupForm.addEventListener("submit", function(event) {
   event.preventDefault(); // Prevent the default form submission
@@ -42,13 +42,13 @@ signupForm.addEventListener("submit", function(event) {
     email: email,
     username: username,
     password: password
-  };
+  }; 
   
   // Send the data to the Python script
   var xhr = new XMLHttpRequest();
   xhr.open("POST", "path/to/python/script.py", true);
   xhr.setRequestHeader("Content-Type", "application/json");
-  xhr.send(JSON.stringify(data));
+  xhr.send(JSON.stringify(data)); 
   
   // Handle the response from the Python script
   xhr.onreadystatechange = function() {
@@ -60,7 +60,7 @@ signupForm.addEventListener("submit", function(event) {
       }
     }
   };
-});
+}); */
 
 
 // Minimized window menu tab interaction
