@@ -854,3 +854,7 @@ h1 {
     text-decoration: none;
     display: flex;
 }
+
+.buildPC-section img {
+    width: 350px;
+}
