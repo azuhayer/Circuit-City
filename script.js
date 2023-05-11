@@ -25,47 +25,6 @@ window.onclick = function(event) {
   }
 }
 
-/* Pandas js */
-
-$(document).ready(function() {
-  // Function to handle form submission
-  function handleSubmit(event) {
-    event.preventDefault(); // Prevent the default form submission
-
-    // Get form data
-    var name = $("#name").val();
-    var email = $("#email").val();
-    var username = $("#username").val();
-    var password = $("#password").val();
-
-    // Create data object
-    var data = {
-      name: name,
-      email: email,
-      username: username,
-      password: password
-    };
-
-    // Send form data to server-side Python code
-    $.ajax({
-      type: "POST",
-      url: "/process-signup",
-      data: JSON.stringify(data),
-      contentType: "application/json",
-      success: function() {
-        alert("Data saved successfully.");
-      },
-      error: function() {
-        alert("Error saving data.");
-      }
-    });
-  }
-
-  // Add form submit event listener
-  $("#signup-form").submit(handleSubmit);
-});
-
-
 /* Minimized window menu tab interaction */
 
 let menu = document.querySelector('#menu-icon');
