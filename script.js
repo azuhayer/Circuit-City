@@ -25,45 +25,48 @@ window.onclick = function(event) {
   }
 }
 
-/* var signupForm = document.getElementById("signup-form");
+/* Pandas js */
 
-signupForm.addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent the default form submission
-  
-  // Get the form data
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var username = document.getElementById("username").value;
-  var password = document.getElementById("password").value;
-  
-  // Create a data object to send in the request
-  var data = {
-    name: name,
-    email: email,
-    username: username,
-    password: password
-  }; 
-  
-  // Send the data to the Python script
-  var xhr = new XMLHttpRequest();
-  xhr.open("POST", "path/to/python/script.py", true);
-  xhr.setRequestHeader("Content-Type", "application/json");
-  xhr.send(JSON.stringify(data)); 
-  
-  // Handle the response from the Python script
-  xhr.onreadystatechange = function() {
-    if (xhr.readyState === XMLHttpRequest.DONE) {
-      if (xhr.status === 200) {
-        console.log("Data saved successfully!");
-      } else {
-        console.log("Error saving data");
+$(document).ready(function() {
+  // Function to handle form submission
+  function handleSubmit(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Get form data
+    var name = $("#name").val();
+    var email = $("#email").val();
+    var username = $("#username").val();
+    var password = $("#password").val();
+
+    // Create data object
+    var data = {
+      name: name,
+      email: email,
+      username: username,
+      password: password
+    };
+
+    // Send form data to server-side Python code
+    $.ajax({
+      type: "POST",
+      url: "/process-signup",
+      data: JSON.stringify(data),
+      contentType: "application/json",
+      success: function() {
+        alert("Data saved successfully.");
+      },
+      error: function() {
+        alert("Error saving data.");
       }
-    }
-  };
-}); */
+    });
+  }
+
+  // Add form submit event listener
+  $("#signup-form").submit(handleSubmit);
+});
 
 
-// Minimized window menu tab interaction
+/* Minimized window menu tab interaction */
 
 let menu = document.querySelector('#menu-icon');
 let navmenu = document.querySelector('.navmenu');
