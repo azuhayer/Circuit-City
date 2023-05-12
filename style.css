@@ -885,3 +885,35 @@ h1 {
 .buildPC-section img {
     width: 350px;
 }
+
+/* NEW BUILD CSS */ /* WORK IN PROGRESS */
+.new-build-heading {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+.component-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.component-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.build-list {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.filters {
+    margin-bottom: 20px;
+}
+
+.filters label {
+    font-weight: bold;
+}
