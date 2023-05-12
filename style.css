@@ -603,6 +603,11 @@ html body {
     background-color: rgba(0,0,0,0.4);
   }
 
+  .modal h3 {
+    text-align: center;
+    padding-top: 20px;
+  }
+
   .modal-content {
     background-color: #fefefe;
     margin: 10% auto;
@@ -660,6 +665,7 @@ html body {
     font-weight: bold;
     cursor: pointer;
     border-radius: 4px;
+    margin-bottom: 20px;
   }
   
   .signup-form button[type="submit"]:hover {
