@@ -627,6 +627,7 @@ html body {
     cursor: pointer;
   }
   
+  /* Sign up and Log in CSS */
   .signup-form {
     max-width: 400px;
     margin: 0 auto;
@@ -671,7 +672,7 @@ html body {
     margin: 20px auto 0;
     padding: 10px 20px;
     border-radius: 5px;
-    background-color: #4CAF50;
+    background-color: turquoise;
     color: white;
     border: none;
     cursor: pointer;
