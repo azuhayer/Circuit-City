@@ -627,21 +627,44 @@ html body {
     cursor: pointer;
   }
   
-  form label {
-    display: block;
-    margin-bottom: 10px;
+  .signup-form {
+    max-width: 400px;
+    margin: 0 auto;
   }
   
-  /*form input[type="text"],
-  form input[type="email"],
-  form input[type="password"] {
+  .signup-form label {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
+    color: black;
+  }
+  
+  .signup-form input[type="text"],
+  .signup-form input[type="email"],
+  .signup-form input[type="password"] {
     width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid gray;
-  }*/
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid turquoise;
+    border-radius: 4px;
+  }
+  
+  .signup-form button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: turquoise;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .signup-form button[type="submit"]:hover {
+    background-color: #006680;
+  }
+  
   
   button[type="submit"] {
     display: block;
@@ -653,10 +676,6 @@ html body {
     border: none;
     cursor: pointer;
     font-size: 20px;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #3e8e41;
   }
 
   /* Sidebar Menu */
