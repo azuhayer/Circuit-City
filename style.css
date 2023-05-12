@@ -609,7 +609,7 @@ html body {
     padding: 20px;
     border: 1px solid #888;
     border-radius: 5px;
-    width: 80%;
+    width: 30%;
   }
   
   .close {
@@ -632,7 +632,7 @@ html body {
     margin-bottom: 10px;
   }
   
-  form input[type="text"],
+  /*form input[type="text"],
   form input[type="email"],
   form input[type="password"] {
     display: block;
@@ -641,7 +641,7 @@ html body {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid gray;
-  }
+  }*/
   
   button[type="submit"] {
     display: block;
@@ -652,6 +652,7 @@ html body {
     color: white;
     border: none;
     cursor: pointer;
+    font-size: 20px;
   }
   
   button[type="submit"]:hover {
